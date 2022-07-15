@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <title>
+            Apalaca Generator
+        </title>
+        <link href="/Css/Alpaca.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/11c6256d28.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="body">
+        <div id="outer-div">
+            <div id="inner-div">
+                <h1 id="inner-div-headline">ALPACA GENERATOR</h1>
+            </div>
+            <div id="inner-div2">
+                <div id="inner-left-side">
+                    <div id="view">
+                        <img src="/Media/backgrounds/grey40.png" alt="Aplaca pic" class="alpacaPic" id="background">
+                        <img src="/Media/leg/default.png" class="alpacaPic" id="leg">
+                        <img src="/Media/mouth/default.png" class="alpacaPic" id="mouth">
+                        <img src="/Media/eyes/default.png" class="alpacaPic" id="eyes">
+                        <img src="/Media/accessories/glasses.png" class="alpacaPic" id="accessories">
+                        <img src="/Media/ears/default.png" class="alpacaPic" id="ears">
+                        <img src="/Media/hair/default.png" class="alpacaPic" id="hair">
+                        <img src="/Media/neck/default.png" class="alpacaPic" id="neck">
+                        <img src="/Media/nose.png" class="alpacaPic" id="nose">
+                        
+                    </div>
+                    <div id="inner-div3">
+                        <button class="download-buttons" onclick="generate()"> <i class="fa fa-solid fa-user"></i> &nbsp; Random</button>
+                        <button class="download-buttons" onclick="downloadd()"> <i class="fa fa-solid fa-download"></i> &nbsp; Download</button>            
+                    </div>
+                </div>
+                <div id="inner-right-side">
+                    <div id="inner-right-side-first">
+                        <h2>ACCESSORIZE THE ALPACA'S</h2>
+                        <div id="top-buttons">
+                            <button class="buttons" onclick="hair()" id="btn-hair">Hair</button>
+                            <button class="buttons" onclick="ear()" id="btn-ears">Ears</button>
+                            <button class="buttons" onclick="eyes()" id="btn-eyes">Eyes</button>
+                            <button class="buttons" onclick="mouth()" id="btn-mouth">Mouth</button>
+                            <button class="buttons" onclick="neck()" id="btn-neck">Neck</button>
+                            <button class="buttons" onclick="leg()" id="btn-leg">Leg</button>
+                            <button class="buttons" onclick="accessories()" id="btn-accessories">Accessories</button>
+                            <button class="buttons" onclick="backgrounds()" id="btn-background">Background</button>
+                        </div>
+                    </div>
+                    <!--     Hair     -->
+                    <div id="hair-items" class="items">
+                        <h2>STYLE</h2>
+                        <div id="top-buttons">
+                            <button  class="hairbuttons" onclick="hairdefault()">Default</button>
+                            <button  class="hairbuttons" onclick="hairbang()">bang</button>
+                            <button  class="hairbuttons" onclick="haircurls()">curls</button>
+                            <button  class="hairbuttons" onclick="hairelegant()">elegant</button>
+                            <button  class="hairbuttons" onclick="hairfancy()">fancy</button>
+                            <button  class="hairbuttons" onclick="hairquiff()">quiff</button>
+                            <button  class="hairbuttons" onclick="hairshort()">short</button>
+                        </div>
+                    </div>
+                    <div id="Ear-items" class="items">
+                        <h2>STYLE</h2>
+                        <div id="top-buttons">
+                            <button class="earbuttons" onclick="eardefault()">Default</button>
+                            <button class="earbuttons" onclick="eartiltbackward()">tilt-backward</button>
+                            <button class="earbuttons" onclick="eartiltforward()">tilt-forward</button>
+                        </div>
+                    </div>
+                    <div id="eyes-items" class="items">
+                        <h2>STYLE</h2>
+                        <div id="top-buttons">
+                            <button class="buttons">Default</button>
+                            <button class="buttons">angry</button>
+                            <button class="buttons">naughty</button>
+                            <button class="buttons">panda</button>
+                            <button class="buttons">smart</button>
+                            <button class="buttons">star</button>
+                        </div>
+                    </div>
+                    <div id="leg-items" class="items">
+                        <h2>STYLE</h2>
+                        <div id="top-buttons">
+                            <button class="buttons">default</button>
+                            <button class="buttons">bubble-tea</button>
+                            <button class="buttons">cookie</button>
+                            <button class="buttons">game-console</button>
+                            <button class="buttons">tilt-backward</button>
+                            <button class="buttons">tilt-forward</button>
+                        </div>
+                    </div>
+                    <div id="mouth-items" class="items">
+                        <h2>STYLE</h2>
+                        <div id="top-buttons">
+                            <button class="buttons">Default</button>
+                            <button class="buttons">astonished</button>
+                            <button class="buttons">eating</button>
+                            <button class="buttons">laugh</button>
+                            <button class="buttons">tongue</button>
+                        </div>
+                    </div>
+                    <div id="neck-items" class="items">
+                        <h2>STYLE</h2>
+                        <div id="top-buttons">
+                            <button class="buttons">Default</button>
+                            <button class="buttons">bend-backward</button>
+                            <button class="buttons">bend-forward</button>
+                            <button class="buttons">thick</button>
+                        </div>
+                    </div>
+                    <div id="backgrounds-items" class="items">
+                        <h2>STYLE</h2>
+                        <div id="top-buttons">
+                            <button class="buttons">blue50</button>
+                            <button class="buttons">blue60</button>
+                            <button class="buttons">blue70</button>
+                            <button class="buttons">darkblue30</button>
+                            <button class="buttons">darkblue50</button>
+                            <button class="buttons">darkblue70</button>
+                            <button class="buttons">green50</button>
+                            <button class="buttons">green60</button>
+                            <button class="buttons">green70</button>
+                            <button class="buttons">grey40</button>
+                            <button class="buttons">grey70</button>
+                            <button class="buttons">grey80</button>
+                        </div>
+                    </div>
+                    <div id="accessories-items" class="items">
+                        <h2>STYLE</h2>
+                        <div id="top-buttons">
+                            <button class="buttons">earings</button>
+                            <button class="buttons">flower</button>
+                            <button class="buttons">glasses</button>
+                            <button class="buttons">headphone</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/Random/Generate.js" type="text/javascript"></script>
+        <canvas id="my_canvas" width="400px" height="400px" style="background-color:aliceblue;display:none;"></canvas>
+        <script src="/js//ImageDownload.js" type="text/javascript"></script>
+        <script src="/js/ear/earloop.js" type="text/javascript"></script>
+        <script src="/js/ear/eardefault.js" type="text/javascript"></script>
+        <script src="/js/ear/eartilt-backward.js" type="text/javascript"></script>
+        <script src="/js/ear/eartilt-forward.js" type="text/javascript"></script>
+        <script src="/js/hair/hairloop.js" type="text/javascript"></script>
+        <script src="/js/hair/hair.js" type="text/javascript"></script>
+        <script src="/js/ear/ear.js" type="text/javascript"></script>
+        <script src="/js/eyes.js" type="text/javascript"></script>
+        <script src="/js/leg.js" type="text/javascript"></script>
+        <script src="/js/mouth.js" type="text/javascript"></script>
+        <script src="/js/neck.js" type="text/javascript"></script>
+        <script src="/js/backgrounds.js" type="text/javascript"></script>
+        <script src="/js/accessories.js" type="text/javascript"></script>
+        <script src="/js/hair/hairdefault.js" type="text/javascript"></script>
+        <script src="/js/hair/hairbang.js" type="text/javascript"></script>
+        <script src="/js/hair/haircurls.js" type="text/javascript"></script>
+        <script src="/js/hair/hairelegant.js" type="text/javascript"></script>
+        <script src="/js/hair/hairfancy.js" type="text/javascript"></script>
+        <script src="/js/hair/hairquiff.js" type="text/javascript"></script>
+        <script src="/js/loop.js" type="text/javascript"></script>
+        <script src="/js/hair/hairshort.js" type="text/javascript"></script>
+    </body>
+</html>
